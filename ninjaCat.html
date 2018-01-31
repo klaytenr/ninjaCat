@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        img{
+            display: block;
+            width: 400px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function() {
+            var pic= $(this).attr('alt');
+            var pic2= $(this).attr('src');
+            $(this).attr('alt', pic2);
+            $(this).attr('src', pic);
+            });
+        })
+    </script>
+</head>
+<body>
+    <img src='ninja0.png' alt='cat0.png' />
+    <img src='ninja1.png' alt='cat1.png' />
+    <img src='ninja2.png' alt='cat2.png' />
+    <img src='ninja3.png' alt='cat3.png' />
+    <img src='ninja4.png' alt='cat4.png' />
+    
+</body>
+</html>
